@@ -1,0 +1,9 @@
+name = "helloworld"
+type = "webpack"
+account_id = "048102100e92e2ba47a9d10757f4d62a"
+workers_dev = true
+
+# https://developers.cloudflare.com/workers/platform/routes
+# [env.production]
+# zone_id = "$yourZoneId"
+# route = "lisp-ceo.com/i/helloworld"
