@@ -13,3 +13,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           workingDirectory: 'helloworld'
+          postCommands: |
+            echo "*** post commands ***"
+            curl -L https://helloworld.j4494.workers.dev
+            echo "******"
