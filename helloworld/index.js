@@ -6,7 +6,7 @@ addEventListener('fetch', event => {
  * @param {Request} request
  */
 async function handleRequest(request) {
-  return new Response('Hello worker!', {
-    headers: { 'content-type': 'text/plain' },
+  return new Response('Darmok and Jalad at Tanagra...Shaka, when the walls fell!', {
+    headers: { 'content-type': 'text/tamarian' },
   })
 }
