@@ -4,7 +4,7 @@ on:
       - master
 
 jobs:
-  deploy:
+  helloworld:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
@@ -16,4 +16,17 @@ jobs:
           postCommands: |
             echo "*** post commands ***"
             curl -L https://helloworld.j4494.workers.dev
+            echo "******"
+  qr:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - uses: actions/checkout@v2
+      - uses: cloudflare/wrangler-action@1.3.0
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          workingDirectory: 'qr-code-generator'
+          postCommands: |
+            echo "*** post commands ***"
+            curl -L https://qr-code-generator.j4494.workers.dev
             echo "******"
