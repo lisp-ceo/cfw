@@ -1,0 +1,11 @@
+name = "workers-graphql-server"
+type = "webpack"
+account_id = "048102100e92e2ba47a9d10757f4d62a"
+workers_dev = true
+webpack_config = "webpack.config.js"
+
+# Enable a kv-namespace to use the KV caching feature
+#
+# kv-namespaces = [
+#   { binding = "WORKERS_GRAPHQL_CACHE", id = "" }
+# ]
